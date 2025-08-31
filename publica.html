@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Artigos - Grupo INC</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(2, 110, 34);
+      color: white;
+      padding: 10px 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0066cc;
+      min-width: 160px;
+      z-index: 1;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-style: groove;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: rgb(2, 110, 34);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    main h1 {
+      color: rgb(2, 110, 34);
+    }
+
+    footer {
+      background-color: rgb(2, 110, 34);
+      padding: 30px 0;
+      text-align: center;
+      color: white;
+    }
+    html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Isso faz o main crescer e empurra o footer para baixo */
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="inc_logo.png" alt="Logo INC">
+      <span>INC</span>
+    </div>
+    <nav>
+      <a href="#">Educação</a>
+      <a href="Pesquisadores.html">Pesquisadores</a>
+      <div class="dropdown">
+        <a href="#">Projetos</a>
+        <div class="dropdown-content">
+          <a href="ProjetosA.html">Projeto A</a>
+          <a href="projetoB.html">Projeto B</a>
+          <a href="projetoC.html">Projeto C</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Publicações</a>
+        <div class="dropdown-content">
+          <a href="#">Livros</a>
+          <a href="artigos.html">Artigos</a>
+        </div>
+      </div>
+      <a href="#">Metodologia INC</a>
+      <a href="index.html">Sobre nós</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Artigos Publicados</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt orci sed nisi vestibulum, vel aliquam sapien accumsan. 
+      Suspendisse potenti. Donec mattis pulvinar sapien, a condimentum libero imperdiet in. Curabitur ac elit suscipit, accumsan justo ac, 
+      dignissim libero. Vivamus in ligula at sapien mattis commodo. Proin nec tempor elit. Etiam non mi nec magna malesuada convallis.
+    </p>
+    <p>
+      Fusce efficitur lectus eget turpis sollicitudin porttitor. Nullam posuere dui eget nisi dictum, sed varius justo egestas. 
+      Vestibulum sed luctus nisl. Mauris pulvinar, ipsum vel sodales tristique, libero risus iaculis metus, a fermentum tortor massa nec neque.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Grupo INC - Todos os direitos reservados.
+  </footer>
+</body>
+</html>

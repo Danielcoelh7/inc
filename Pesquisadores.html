@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisadores - Grupo INC</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(2, 110, 34);
+      color: white;
+      padding: 10px 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgb(2, 110, 34);
+      min-width: 160px;
+      z-index: 1;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-style: groove;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: rgb(2, 110, 34);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    main h1 {
+      font-size: 36px;
+      color: rgb(2, 110, 34);
+      margin-bottom: 40px;
+    }
+
+    .pesquisadores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .pesquisador {
+      width: 200px;
+      text-align: center;
+    }
+
+    .pesquisador img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .pesquisador a {
+      display: block;
+      color: #003366;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    footer {
+      background-color: rgb(2, 110, 34);
+      padding: 30px 0;
+      text-align: center;
+      color: white;
+    }
+
+    .carousel {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="inc_logo.png" alt="Logo INC">
+      <span>INC</span>
+    </div>
+    <nav>
+      <a href="#">Educação</a>
+      <a href="pesquisadores.html">Pesquisadores</a>
+      <div class="dropdown">
+        <a href="#">Projetos</a>
+        <div class="dropdown-content">
+          <a href="projetosA.html">Projeto A</a>
+          <a href="projetoB.html">Projeto B</a>
+          <a href="projetoC.html">Projeto C</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Publicações</a>
+        <div class="dropdown-content">
+          <a href="#">Livros</a>
+          <a href="publica.html">Artigos</a>
+        </div>
+      </div>
+      <a href="#">Metodologia INC</a>
+      <a href="index.html">Sobre nós</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Pesquisadores</h1>
+    <div class="pesquisadores">
+      <div class="pesquisador">
+        <img src="edson.jpg" alt="">
+        <p>Daniel Coelho</p>
+        <a href="mailto:dancoelh77@gmail.com">dancoelh77@gmail.com</a>
+        <a href="#">Lattes</a>
+        <a href="#">Google Scholar</a>
+      </div>
+      <div class="pesquisador">
+        <img src="itana.jpg" alt="">
+        <p>Nelson Nascimento Junior</p>
+        <a href="mailto:nnascimentojunior@gmail.com">nnascimentojunior@gmail.com</a>
+        <a href="#">Lattes</a>
+        <a href="#">Google Scholar</a>
+      </div>
+     
+      <div class="pesquisador">
+        <img src="juliana.jpg" alt="">
+        <p>Alice Marinho</p>
+        <a href="mailto:alicemarinhogms@gmail.com">alicemarinhogms@gmail.com</a>
+        <a href="#">Lattes</a>
+        <a href="#">Google Scholar</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <p>&copy; 2025 Grupo INC - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

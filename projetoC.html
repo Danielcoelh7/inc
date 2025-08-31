@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto A - Grupo INC</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(2, 110, 34);
+      color: white;
+      padding: 10px 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgb(2, 110, 34);
+      min-width: 160px;
+      z-index: 1;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-style: groove;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: rgb(2, 110, 34);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    main h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    main p {
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: rgb(2, 110, 34);
+      padding: 30px 0;
+      text-align: center;
+      color: white;
+    }
+
+    .carousel {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 20px auto;
+      overflow: hidden;
+    }
+
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="inc_logo.png" alt="Logo INC">
+      <span>INC</span>
+    </div>
+    <nav>
+      <a href="#">Educação</a>
+      <a href="#">Pesquisadores</a>
+      <div class="dropdown">
+        <a href="#">Projetos</a>
+        <div class="dropdown-content">
+          <a href="#">Projeto A</a>
+          <a href="#">Projeto B</a>
+          <a href="#">Projeto C</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Publicações</a>
+        <div class="dropdown-content">
+          <a href="#">Livros</a>
+          <a href="publica.html">Artigos</a>
+        </div>
+      </div>
+      <a href="#">Metodologia INC</a>
+      <a href="index.html">Sobre nós</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Projeto C - Desenvolvimento e Inovação</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit feugiat orci, at vulputate turpis lacinia ac. Donec rhoncus porta nunc, a sollicitudin purus rhoncus nec. Aenean fermentum augue quis nisi tempor, nec lacinia velit ultrices. Maecenas blandit justo nec tellus fermentum, at egestas erat vestibulum.</p>
+    <p>Phasellus non purus sed nunc cursus convallis non vel nunc. Aliquam sagittis quam in nulla volutpat tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut tincidunt ligula non orci vestibulum, eget facilisis justo dapibus. Aenean malesuada libero nec turpis porttitor faucibus.</p>
+    <p>Integer ac sodales nibh, non feugiat felis. In hac habitasse platea dictumst. Curabitur id porta erat. Etiam nec arcu eu risus luctus congue a ac neque. Morbi commodo lorem velit, vel rutrum elit facilisis a. Suspendisse porta arcu felis, vitae volutpat libero facilisis eget.</p>
+    <p>Vestibulum ut hendrerit nulla. Sed malesuada purus a velit porttitor malesuada. Duis at viverra orci. Quisque lacinia diam at arcu tincidunt sodales. Fusce feugiat, metus eget hendrerit gravida, nibh arcu tristique nulla, vel dapibus massa neque id eros. In dignissim eros sed lorem feugiat tincidunt.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus iaculis lacus nec pulvinar. Suspendisse vestibulum accumsan nulla nec elementum. In nec nunc non neque fermentum luctus at eget nulla. Duis vel nisi at metus vehicula hendrerit.</p>
+    <p>Morbi fermentum augue et eros egestas, nec bibendum lacus egestas. Pellentesque tempor sem non felis gravida, et posuere ante cursus. Suspendisse sed vehicula ligula. Pellentesque non ipsum dignissim, eleifend nisi ac, dictum risus.</p>
+  </main>
+
+  <footer>
+
+    <div>
+      &copy; 2025 Grupo INC - Todos os direitos reservados.
+    </div>
+  </footer>
+  </script>
+</body>
+</html>
